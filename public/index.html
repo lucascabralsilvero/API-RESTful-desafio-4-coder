@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div style="max-width: 500px">
+        <form
+          action="/api/products"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h3>Ingrese un nuevo producto</h3>
+          <div class="field">
+            <label class="label">Nombre</label>
+            <div class="control has-icons-left has-icons-right">
+              <input
+                type="text"
+                placeholder="Ingrese el nombre del producto"
+                value=""
+                name="name"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label >Precio</label>
+            <div>
+              <input
+                type="text"
+                placeholder="Ingrese el precio del producto"
+                value=""
+                name="price"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div >
+              <label>
+                <input type="file" name="photo" />
+                <span class="file-cta">
+                  <span>
+                    <ion-icon
+                      name="cloud-upload-outline"
+                      style="font-size: 25px"
+                    ></ion-icon>
+                  </span>
+                  <span > Sube una imágen </span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div>
+            <div>
+              <button>Guardar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
